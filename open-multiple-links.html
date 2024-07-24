@@ -1,7 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Multiple Links</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            background-color: #FDC54A;
+            border: none;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #e0b141;
+        }
+    </style>
     <script>
         function openMultipleLinks() {
             var links = [
@@ -45,6 +75,6 @@
     </script>
 </head>
 <body>
-    <a href="#" onclick="openMultipleLinks(); return false;">Open Multiple Links</a>
+    <a href="#" class="button" onclick="openMultipleLinks(); return false;">Open Multiple Links</a>
 </body>
 </html>
