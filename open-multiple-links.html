@@ -7,6 +7,7 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -27,13 +28,14 @@
             cursor: pointer;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s ease;
+            margin: 10px;
         }
         .button:hover {
             background-color: #e0b141;
         }
     </style>
     <script>
-        function openMultipleLinks() {
+        function openHomePages() {
             var links = [
                 "https://leslieretterhomes.com",
                 "https://macdougallrealestate.com",
@@ -72,9 +74,50 @@
                 window.open(links[i], '_blank');
             }
         }
+
+        function openAdminPages() {
+            var links = [
+                "https://leslieretterhomes.com/admin",
+                "https://macdougallrealestate.com/admin",
+                "https://nycerealestate.com/admin",
+                "https://carolfuller.com/admin",
+                "https://marktrouthomes.com/admin",
+                "https://daveretter.com/admin",
+                "https://ashleysurbella.com/admin",
+                "https://pomeroyhomes.com/admin",
+                "https://gingerjenks.com/admin",
+                "https://keeleywagner.com/admin",
+                "https://kenolsenrealty.com/admin",
+                "https://theproperties.com/admin",
+                "https://jasonbarrowhomes.com/admin",
+                "https://kristinsweesyrealtor.com/admin",
+                "https://homesbymartharobles.com/admin",
+                "https://lizbragghomes.com/admin",
+                "https://mikepunch.com/admin",
+                "https://dressrealty.com/admin",
+                "https://emmamccordrealty.org/admin",
+                "https://kolzighomes.com/admin",
+                "https://homesbymonroe.com/admin",
+                "https://georgeeakin.com/admin",
+                "https://sandrasenger.com/admin",
+                "https://johnmowerhomes.com/admin",
+                "https://julielynchhomes.com/admin",
+                "https://lamarlinde.com/admin",
+                "https://sallyashby.com/admin",
+                "https://jaredretter.com/admin",
+                "https://davelarsonhomes.com/admin",
+                "https://homesbymccue.com/admin",
+                "https://rivercrestest.com/admin"
+            ];
+
+            for (var i = 0; i < links.length; i++) {
+                window.open(links[i], '_blank');
+            }
+        }
     </script>
 </head>
 <body>
-    <a href="#" class="button" onclick="openMultipleLinks(); return false;">Open Multiple Links</a>
+    <a href="#" class="button" onclick="openHomePages(); return false;">Open Home Pages</a>
+    <a href="#" class="button" onclick="openAdminPages(); return false;">Open Admin Pages</a>
 </body>
 </html>
