@@ -1,113 +1,47 @@
+Here is the updated HTML code with the changes you requested:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Multiple Links</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: white;
-            font-family: Arial, sans-serif;
-        }
-        .button {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 20px;
-            color: white;
-            background-color: #FDC54A;
-            border: none;
-            border-radius: 50px;
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-            margin: 10px;
-        }
-        .button:hover {
-            background-color: #e0b141;
-        }
-    </style>
-    <script>
-        function openHomePages() {
+    <title>Open Multiple Pages</title>
+    <script type="text/javascript">
+        function openBotToolboxes() {
             var links = [
-                "https://leslieretterhomes.com",
-                "https://macdougallrealestate.com",
-                "https://nycerealestate.com",
-                "https://carolfuller.com",
-                "https://marktrouthomes.com",
-                "https://daveretter.com",
-                "https://ashleysurbella.com",
-                "https://pomeroyhomes.com",
-                "https://gingerjenks.com",
-                "https://keeleywagner.com",
-                "https://kenolsenrealty.com",
-                "https://theproperties.com",
-                "https://jasonbarrowhomes.com",
-                "https://kristinsweesyrealtor.com",
-                "https://homesbymartharobles.com",
-                "https://lizbragghomes.com",
-                "https://mikepunch.com",
-                "https://dressrealty.com",
-                "https://emmamccordrealty.org",
-                "https://kolzighomes.com",
-                "https://homesbymonroe.com",
-                "https://georgeeakin.com",
-                "https://sandrasenger.com",
-                "https://johnmowerhomes.com",
-                "https://julielynchhomes.com",
-                "https://lamarlinde.com",
-                "https://sallyashby.com",
-                "https://jaredretter.com",
-                "https://davelarsonhomes.com",
-                "https://homesbymccue.com",
-                "https://rivercrestest.com"
-            ];
-
-            for (var i = 0; i < links.length; i++) {
-                window.open(links[i], '_blank');
-            }
-        }
-
-        function openAdminPages() {
-            var links = [
-                "https://leslieretterhomes.com/admin",
-                "https://macdougallrealestate.com/admin",
-                "https://nycerealestate.com/admin",
-                "https://carolfuller.com/admin",
-                "https://marktrouthomes.com/admin",
-                "https://daveretter.com/admin",
-                "https://ashleysurbella.com/admin",
-                "https://pomeroyhomes.com/admin",
-                "https://gingerjenks.com/admin",
-                "https://keeleywagner.com/admin",
-                "https://kenolsenrealty.com/admin",
-                "https://theproperties.com/admin",
-                "https://jasonbarrowhomes.com/admin",
-                "https://kristinsweesyrealtor.com/admin",
-                "https://homesbymartharobles.com/admin",
-                "https://lizbragghomes.com/admin",
-                "https://mikepunch.com/admin",
-                "https://dressrealty.com/admin",
-                "https://emmamccordrealty.org/admin",
-                "https://kolzighomes.com/admin",
-                "https://homesbymonroe.com/admin",
-                "https://georgeeakin.com/admin",
-                "https://sandrasenger.com/admin",
-                "https://johnmowerhomes.com/admin",
-                "https://julielynchhomes.com/admin",
-                "https://lamarlinde.com/admin",
-                "https://sallyashby.com/admin",
-                "https://jaredretter.com/admin",
-                "https://davelarsonhomes.com/admin",
-                "https://homesbymccue.com/admin",
-                "https://rivercrestest.com/admin"
+                "https://ap.retterco.com/home",
+                "https://as.retterco.com/home",
+                "https://cf.retterco.com/home",
+                "https://ck.retterco.com/home",
+                "https://cm.retterco.com/home",
+                "https://dl.retterco.com/home",
+                "https://dr.retterco.com/home",
+                "https://ec.retterco.com/home",
+                "https://em.retterco.com/home",
+                "https://emily.retterco.com/home",
+                "https://es.retterco.com/home",
+                "https://gd.retterco.com/home",
+                "https://ge.retterco.com/home",
+                "https://gj.retterco.com/home",
+                "https://jb.retterco.com/home",
+                "https://jl.retterco.com/home",
+                "https://jm.retterco.com/home",
+                "https://jr.retterco.com/home",
+                "https://ko.retterco.com/home",
+                "https://ks.retterco.com/home",
+                "https://kw.retterco.com/home",
+                "https://ll.retterco.com/home",
+                "https://lr.retterco.com/home",
+                "https://mccue.retterco.com/home",
+                "https://md.retterco.com/home",
+                "https://mr.retterco.com/home",
+                "https://mt.retterco.com/home",
+                "https://office.retterco.com/home",
+                "https://pb.retterco.com/home",
+                "https://sa.retterco.com/home",
+                "https://sg.retterco.com/home",
+                "https://tn.retterco.com/home"
             ];
 
             for (var i = 0; i < links.length; i++) {
@@ -237,10 +171,10 @@
     </script>
 </head>
 <body>
-    <a href="#" class="button" onclick="openHomePages(); return false;">Open Home Pages</a>
-    <a href="#" class="button" onclick="openAdminPages(); return false;">Open Admin Pages</a>
-    <a href="#" class="button" onclick="openElementorPages(); return false;">Open Elementor Pages</a>
-    <a href="#" class="button" onclick="openContactElementorPages(); return false;">Open Contact Elementor Pages</a>
-    <a href="#" class="button" onclick="openAboutElementorPages(); return false;">Open About Elementor Pages</a>
-</body>
-</html>
+  <p><strong>Note:</strong> Ensure you have pop-up blocker disabled when clicking the following links, as these buttons are designed to open a butt load of pages at once.</p>
+<a href="#" class="button" onclick="openBotToolboxes(); return false;">Bot Toolboxes</a>
+<a href="#" class="button" onclick="openAdminPages(); return false;">Open Admin Pages</a>
+<a href="#" class="button" onclick="openElementorPages(); return false;">Open Elementor Pages</a>
+<a href="#" class="button" onclick="openContactElementorPages(); return false;">Open Contact Elementor Pages</a>
+<a href="#" class="button" onclick="openAboutElementorPages(); return false;">Open About Elementor Pages</a>
+
